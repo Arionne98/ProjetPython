@@ -20,9 +20,13 @@ class Game:
                 if event.type == pygame.QUIT:
                     running = False
 
+    def decharger_module(self):
+      pygame.quit()
+
 minecraft = Game("Minecraft 1.7.10", (600, 500))
 
 minecraft.charger_module()
 minecraft.display()
 minecraft.run()
+minecraft.decharger_module()
 
